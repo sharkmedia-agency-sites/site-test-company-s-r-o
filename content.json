@@ -1,0 +1,280 @@
+{
+  "site_name": "Vybagrujemsb.sk",
+  "site_url": "https://vybagrujemsb.sk",
+  "schema_version": "1.0",
+  "sections": [
+    {
+      "type": "navigation",
+      "id": "navigation_1",
+      "label": "Navigation",
+      "order": 1,
+      "fields": {
+        "logo_image": "images/logo.png",
+        "logo_text": "Vybagrujem",
+        "logo_highlight": "SB",
+        "phone": "+421 918 232 437",
+        "links": [
+          { "id": "nav_1", "label": "Domov", "url": "#hero_1" },
+          { "id": "nav_2", "label": "O nás", "url": "#about_1" },
+          { "id": "nav_3", "label": "Služby", "url": "#services_1" },
+          { "id": "nav_4", "label": "Stroje", "url": "#features_1" },
+          { "id": "nav_5", "label": "Galéria", "url": "#gallery_1" },
+          { "id": "nav_6", "label": "Kontakt", "url": "#contact_1" }
+        ]
+      }
+    },
+    {
+      "type": "hero",
+      "id": "hero_1",
+      "label": "Hero Banner",
+      "order": 2,
+      "fields": {
+        "headline": "Zemné a výkopové práce",
+        "subheadline": "Profesionálne služby v okresoch Prešov a Sabinov s modernou technikou a dlhoročnými skúsenosťami.",
+        "cta_text": "Kontaktujte nás",
+        "cta_url": "tel:+421918232437",
+        "cta_secondary_text": "Naše služby",
+        "cta_secondary_url": "#services_1",
+        "background_image": "images/hero_bg.png"
+      }
+    },
+    {
+      "type": "about",
+      "id": "about_1",
+      "label": "O nás",
+      "order": 3,
+      "fields": {
+        "headline": "O nás",
+        "subtitle": "Prečo si vybrať práve nás",
+        "text": "Sme rodinná firma so sídlom v Sabinove, ktorá sa špecializuje na zemné a výkopové práce. S našimi modernými strojmi a profesionálnym prístupom zabezpečíme kvalitné výsledky pre každý projekt. Disponujeme novými strojmi a neustále investujeme do modernej techniky, aby sme vám poskytli tie najlepšie služby.",
+        "text_2": "Naše služby pokrývajú široké okolie vrátane okresov Prešov, Sabinov a priľahlých oblastí. Či už potrebujete výkopy pre základy, inžinierske siete alebo terénne úpravy — sme tu pre vás.",
+        "image": "images/about_section.png",
+        "experience_years": "5+",
+        "experience_label": "rokov skúseností"
+      }
+    },
+    {
+      "type": "services_grid",
+      "id": "services_1",
+      "label": "Naše služby",
+      "order": 4,
+      "fields": {
+        "headline": "Naše služby",
+        "subtitle": "Komplexné riešenia pre vaše projekty",
+        "items": [
+          {
+            "id": "svc_1",
+            "title": "Výkopy pre základy",
+            "description": "Realizujeme výkopy pre rodinné domy, garáže a ďalšie stavby. Presná práca s moderným rýpadlom Kubota zaistí kvalitný základ vášho projektu.",
+            "icon": "foundation",
+            "image": "images/service_foundations.png"
+          },
+          {
+            "id": "svc_2",
+            "title": "Inžinierske siete",
+            "description": "Kopeme výkopy pre vodovod, kanalizáciu, plyn a elektrické vedenie. Disponujeme lopatami rôznych šírok od 30cm do 60cm.",
+            "icon": "pipe",
+            "image": "images/service_utilities.png"
+          },
+          {
+            "id": "svc_3",
+            "title": "Terénne úpravy",
+            "description": "Svahovanie, vyrovnávanie terénu a príprava stavebných pozemkov. S hydraulickou svahovacou lyžicou 120cm dosiahneme ideálny výsledok.",
+            "icon": "terrain",
+            "image": "images/service_terrain.png"
+          },
+          {
+            "id": "svc_4",
+            "title": "Búracie práce",
+            "description": "Demolácie menších stavieb, búranie betónových plôch a odstraňovanie starých konštrukcií s odborným prístupom.",
+            "icon": "demolition",
+            "image": "images/service_demolition.png"
+          },
+          {
+            "id": "svc_5",
+            "title": "Odvoz zeminy",
+            "description": "Zabezpečíme odvoz vykopanej zeminy a stavebného odpadu. Komplexné riešenie od výkopu po čistý pozemok.",
+            "icon": "truck",
+            "image": "images/service_transport.png"
+          },
+          {
+            "id": "svc_6",
+            "title": "Špeciálne práce",
+            "description": "Výkopy v stiesnených priestoroch vďaka nulovému presahu rýpadla. Mimoosové kopanie pre prácu blízko budov a plotov.",
+            "icon": "precision",
+            "image": "images/service_special.png"
+          }
+        ]
+      }
+    },
+    {
+      "type": "features",
+      "id": "features_1",
+      "label": "Naše stroje",
+      "order": 5,
+      "fields": {
+        "headline": "Naše stroje",
+        "subtitle": "Moderná technika pre kvalitné výsledky",
+        "machine_name": "Kubota U27-4",
+        "machine_description": "Pásové rýpadlo s hmotnosťou 2700 kg, nulovým presahom a možnosťou mimoosového kopania. Ideálne pre prácu v stiesnených priestoroch a blízko existujúcich stavieb.",
+        "machine_image": "images/machine_kubota.png",
+        "specs": [
+          { "id": "spec_1", "label": "Prevádzková hmotnosť", "value": "2 590 kg" },
+          { "id": "spec_2", "label": "Šírka lyžice so zubami", "value": "500 mm" },
+          { "id": "spec_3", "label": "Objem lyžice", "value": "66 l" },
+          { "id": "spec_4", "label": "Zarovnávacia radlica", "value": "1500 x 300 mm" },
+          { "id": "spec_5", "label": "Dĺžka stroja", "value": "4 190 mm" },
+          { "id": "spec_6", "label": "Výška stroja", "value": "2 430 mm" },
+          { "id": "spec_7", "label": "Šírka stroja", "value": "1 560 mm" }
+        ],
+        "accessories": [
+          { "id": "acc_1", "title": "Lopata 30cm", "description": "Pre úzke výkopy a inžinierske siete", "icon": "shovel" },
+          { "id": "acc_2", "title": "Lopata 50cm", "description": "Štandardná šírka pre väčšinu prác", "icon": "shovel" },
+          { "id": "acc_3", "title": "Lopata 60cm", "description": "Pre širšie výkopy a základy", "icon": "shovel" },
+          { "id": "acc_4", "title": "Svahovacia lyžica 120cm", "description": "Hydraulická lyžica pre terénne úpravy", "icon": "level" }
+        ]
+      }
+    },
+    {
+      "type": "gallery",
+      "id": "gallery_1",
+      "label": "Galéria prác",
+      "order": 6,
+      "fields": {
+        "headline": "Galéria našich prác",
+        "subtitle": "Pozrite si ukážky z našich dokončených projektov",
+        "items": [
+          { "id": "gal_1", "image": "images/1678444840img-20220919-115230.jpg", "caption": "Zemné práce v teréne" },
+          { "id": "gal_2", "image": "images/1678445720img-20220629-124702.jpg", "caption": "Výkopové práce" },
+          { "id": "gal_3", "image": "images/1678446120img-20220513-140811.jpg", "caption": "Príprava pozemku" },
+          { "id": "gal_4", "image": "images/1689506068img-20230412-104148.jpg", "caption": "Výkopy pre základy" },
+          { "id": "gal_5", "image": "images/1689506219img-20230411-134333.jpg", "caption": "Práca s rýpadlom" },
+          { "id": "gal_6", "image": "images/1689506381img-20230517-220801.jpg", "caption": "Terénne úpravy" },
+          { "id": "gal_7", "image": "images/1689506602img-20230517-220851.jpg", "caption": "Inžinierske siete" },
+          { "id": "gal_8", "image": "images/1689506691img-20230412-113332.jpg", "caption": "Dokončený projekt" }
+        ]
+      }
+    },
+    {
+      "type": "stats",
+      "id": "stats_1",
+      "label": "Štatistiky",
+      "order": 7,
+      "fields": {
+        "headline": "Naše čísla hovoria za nás",
+        "items": [
+          { "id": "stat_1", "value": "5", "label": "Rokov skúseností", "suffix": "+" },
+          { "id": "stat_2", "value": "200", "label": "Dokončených projektov", "suffix": "+" },
+          { "id": "stat_3", "value": "150", "label": "Spokojných klientov", "suffix": "+" },
+          { "id": "stat_4", "value": "100", "label": "Spokojnosť klientov", "suffix": "%" }
+        ]
+      }
+    },
+    {
+      "type": "cta_banner",
+      "id": "cta_1",
+      "label": "Výzva k akcii",
+      "order": 8,
+      "fields": {
+        "headline": "Nové stroje, lepšie výsledky",
+        "text": "Investovali sme do novej modernej techniky, aby sme vám mohli poskytnúť ešte kvalitnejšie a rýchlejšie služby. Kontaktujte nás a presvedčte sa sami o kvalite našej práce.",
+        "cta_text": "Zavolajte nám",
+        "cta_url": "tel:+421918232437",
+        "background_image": "images/hero_bg.png"
+      }
+    },
+    {
+      "type": "testimonials",
+      "id": "testimonials_1",
+      "label": "Recenzie",
+      "order": 9,
+      "fields": {
+        "headline": "Čo hovoria naši klienti",
+        "subtitle": "Dôvera našich zákazníkov je pre nás najdôležitejšia",
+        "items": [
+          {
+            "id": "rev_1",
+            "name": "Jozef",
+            "text": "Kvalitne odvedená práca, profesionálny prístup bagristu. Bager flexibilný, dostane sa skoro všade. Spokojnosť. Cena adekvátna k dobre odvedenej práci.",
+            "role": "Renčišov",
+            "rating": 5
+          },
+          {
+            "id": "rev_2",
+            "name": "Martin",
+            "text": "Rýchla a spoľahlivá práca. Damián bol veľmi ochotný a profesionálny. Výkopy pre náš rodinný dom boli hotové v rekordnom čase. Určite odporúčam!",
+            "role": "Sabinov",
+            "rating": 5
+          },
+          {
+            "id": "rev_3",
+            "name": "Peter",
+            "text": "Veľmi dobrá spolupráca. Presný termín, kvalitná práca a férová cena. Stroj sa dostal aj do miest, kde som to nečakal. Ďakujem za pomoc s kanalizáciou.",
+            "role": "Prešov",
+            "rating": 5
+          }
+        ]
+      }
+    },
+    {
+      "type": "service_area",
+      "id": "service_area_1",
+      "label": "Pokrytie oblasti",
+      "order": 10,
+      "fields": {
+        "headline": "Kde pôsobíme",
+        "subtitle": "Pokrývame široké okolie okresov Prešov a Sabinov",
+        "text": "Hlavne pôsobíme v okresoch Prešov a Sabinov, ale radi prídeme aj do okolitých oblastí. Kontaktujte nás pre individuálnu cenovú ponuku.",
+        "map_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d334198.55749000737!2d20.65948499503234!3d49.12603617727383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473e611a25f9a809%3A0x300f7d1c6979010!2sSabinov!5e0!3m2!1ssk!2ssk!4v1649402559392!5m2!1ssk!2ssk",
+        "areas": [
+          { "id": "area_1", "name": "Sabinov" },
+          { "id": "area_2", "name": "Prešov" },
+          { "id": "area_3", "name": "Lipany" },
+          { "id": "area_4", "name": "Široké" },
+          { "id": "area_5", "name": "Jarovnice" },
+          { "id": "area_6", "name": "Renčišov" },
+          { "id": "area_7", "name": "Pečovská Nová Ves" },
+          { "id": "area_8", "name": "Ľutina" }
+        ]
+      }
+    },
+    {
+      "type": "contact",
+      "id": "contact_1",
+      "label": "Kontakt",
+      "order": 11,
+      "fields": {
+        "headline": "Kontaktujte nás",
+        "subtitle": "Máte otázky? Neváhajte sa ozvať.",
+        "owner_name": "Damián Paločko",
+        "owner_role": "Majiteľ",
+        "company": "Damián Paločko",
+        "address": "Renčišov 77, 082 63 Jarovnice",
+        "phone": "0918 232 437",
+        "email": "info@vybagrujemsb.sk",
+        "ico": "54452694",
+        "dic": "1121666403"
+      }
+    },
+    {
+      "type": "footer",
+      "id": "footer_1",
+      "label": "Pätička",
+      "order": 12,
+      "fields": {
+        "copyright_text": "Vybagrujemsb.sk, 2026. Všetky práva vyhradené.",
+        "links": [
+          { "id": "flink_1", "label": "Domov", "url": "#hero_1" },
+          { "id": "flink_2", "label": "Služby", "url": "#services_1" },
+          { "id": "flink_3", "label": "Stroje", "url": "#features_1" },
+          { "id": "flink_4", "label": "Galéria", "url": "#gallery_1" },
+          { "id": "flink_5", "label": "Kontakt", "url": "#contact_1" }
+        ],
+        "social": [
+          { "id": "social_1", "platform": "facebook", "url": "https://www.facebook.com/vybagrujemsb.sk" },
+          { "id": "social_2", "platform": "instagram", "url": "https://www.instagram.com/vybagrujemsb.sk/" }
+        ]
+      }
+    }
+  ]
+}
