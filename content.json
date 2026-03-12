@@ -1,26 +1,42 @@
 {
-  "site_name": "Vybagrujemsb.sk",
-  "site_url": "https://vybagrujemsb.sk",
+  "site_name": "Ideálne stavby",
+  "site_url": "",
   "schema_version": "1.0",
+  "theme": {
+    "primary": "#D4890E",
+    "primary_dark": "#B8750A",
+    "secondary": "#1B1B1F",
+    "accent": "#D4890E",
+    "dark": "#1B1B1F",
+    "light": "#F7F6F3",
+    "surface": "#EEEDEA",
+    "surface_light": "#E5E4E0",
+    "text": "#1B1B1F",
+    "text_light": "#6B6B6B",
+    "text_dark": "#111111",
+    "border": "rgba(212,137,14,0.15)"
+  },
+  "fonts": {
+    "heading": "Archivo",
+    "body": "DM Sans"
+  },
   "sections": [
     {
       "type": "navigation",
-      "id": "navigation_1",
-      "label": "Navigation",
+      "id": "nav_1",
+      "label": "Navigácia",
       "order": 1,
       "fields": {
-        "logo_image": "images/logo.png",
-        "logo_text": "Vybagrujem",
-        "logo_highlight": "SB",
-        "phone": "+421 918 232 437",
+        "logo_text": "Ideálne stavby",
         "links": [
-          { "id": "nav_1", "label": "Domov", "url": "#hero_1" },
-          { "id": "nav_2", "label": "O nás", "url": "#about_1" },
-          { "id": "nav_3", "label": "Služby", "url": "#services_1" },
-          { "id": "nav_4", "label": "Stroje", "url": "#features_1" },
-          { "id": "nav_5", "label": "Galéria", "url": "#gallery_1" },
-          { "id": "nav_6", "label": "Kontakt", "url": "#contact_1" }
-        ]
+          { "id": "link_1", "label": "Domov", "url": "#hero_1" },
+          { "id": "link_2", "label": "O nás", "url": "#about_1" },
+          { "id": "link_3", "label": "Služby", "url": "#services_1" },
+          { "id": "link_4", "label": "Galéria", "url": "#portfolio_1" },
+          { "id": "link_5", "label": "Kontakt", "url": "#contact_1" }
+        ],
+        "cta_text": "Nezáväzná ponuka",
+        "cta_url": "#contact_1"
       }
     },
     {
@@ -29,13 +45,13 @@
       "label": "Hero Banner",
       "order": 2,
       "fields": {
-        "headline": "Zemné a výkopové práce",
-        "subheadline": "Profesionálne služby v okresoch Prešov a Sabinov s modernou technikou a dlhoročnými skúsenosťami.",
-        "cta_text": "Kontaktujte nás",
-        "cta_url": "tel:+421918232437",
-        "cta_secondary_text": "Naše služby",
-        "cta_secondary_url": "#services_1",
-        "background_image": "images/hero_bg.png"
+        "headline": "Stavby, ktoré vydržia generácie",
+        "subheadline": "Kompletné stavebné práce od sadrokartónu po rekonštrukcie. Pracujeme s overenými materiálmi Rigips, Knauf, Fermacell, Ytong a ďalšími. Kvalita bez kompromisov.",
+        "cta_text": "Požiadať o cenovú ponuku",
+        "cta_url": "#contact_1",
+        "cta_secondary_text": "Naše realizácie",
+        "cta_secondary_url": "#portfolio_1",
+        "background_image": "https://www.bazos.sk/img/1/305/189257305.jpg?t=1772370819"
       }
     },
     {
@@ -44,13 +60,17 @@
       "label": "O nás",
       "order": 3,
       "fields": {
-        "headline": "O nás",
-        "subtitle": "Prečo si vybrať práve nás",
-        "text": "Sme rodinná firma so sídlom v Sabinove, ktorá sa špecializuje na zemné a výkopové práce. S našimi modernými strojmi a profesionálnym prístupom zabezpečíme kvalitné výsledky pre každý projekt. Disponujeme novými strojmi a neustále investujeme do modernej techniky, aby sme vám poskytli tie najlepšie služby.",
-        "text_2": "Naše služby pokrývajú široké okolie vrátane okresov Prešov, Sabinov a priľahlých oblastí. Či už potrebujete výkopy pre základy, inžinierske siete alebo terénne úpravy — sme tu pre vás.",
-        "image": "images/about_section.png",
-        "experience_years": "5+",
-        "experience_label": "rokov skúseností"
+        "label": "O našej firme",
+        "headline": "Poctivá práca, férové ceny",
+        "text": "Sme tím skúsených stavbárov zo Žiliny, ktorí pristupujú ku každému projektu s maximálnou zodpovednosťou. Či už ide o sadrokartónové priečky v podkroví, montáž plotu, alebo kompletnú rekonštrukciu domu — vždy dodáme prácu, za ktorou si stojíme.",
+        "text_2": "Pracujeme s prvotriednym materiálom od značiek Rigips, Knauf, Fermacell, Ytong, Porfix, Delta a Isover. Žiadne lacné náhražky — len overená kvalita s garanciou.",
+        "image": "https://www.bazos.sk/img/15/305/189257305.jpg?t=1772370819",
+        "features": [
+          { "id": "af_1", "text": "Materiály od overených výrobcov" },
+          { "id": "af_2", "text": "Záruka na všetky práce" },
+          { "id": "af_3", "text": "Férové ceny bez skrytých poplatkov" },
+          { "id": "af_4", "text": "Pôsobíme v Žiline a okolí" }
+        ]
       }
     },
     {
@@ -59,50 +79,108 @@
       "label": "Naše služby",
       "order": 4,
       "fields": {
-        "headline": "Naše služby",
-        "subtitle": "Komplexné riešenia pre vaše projekty",
+        "label": "Čo ponúkame",
+        "headline": "Kompletné stavebné služby",
+        "subheadline": "Od drobných opráv po veľké rekonštrukcie — zvládneme všetko pod jednou strechou.",
         "items": [
           {
             "id": "svc_1",
-            "title": "Výkopy pre základy",
-            "description": "Realizujeme výkopy pre rodinné domy, garáže a ďalšie stavby. Presná práca s moderným rýpadlom Kubota zaistí kvalitný základ vášho projektu.",
-            "icon": "foundation",
-            "image": "images/service_foundations.png"
+            "title": "Sadrokartónové konštrukcie",
+            "description": "Podkrovia, priečky, akustické, kazetové a protipožiarne stropy. Presná montáž systémami Rigips a Knauf.",
+            "icon": "layers",
+            "featured": true
           },
           {
             "id": "svc_2",
-            "title": "Inžinierske siete",
-            "description": "Kopeme výkopy pre vodovod, kanalizáciu, plyn a elektrické vedenie. Disponujeme lopatami rôznych šírok od 30cm do 60cm.",
-            "icon": "pipe",
-            "image": "images/service_utilities.png"
+            "title": "Montáž plotov 2D a 3D",
+            "description": "Inštalácia moderných panelových plotov vrátane brán a bránok. Pevné, estetické a dlhotrvajúce riešenia.",
+            "icon": "fence"
           },
           {
             "id": "svc_3",
-            "title": "Terénne úpravy",
-            "description": "Svahovanie, vyrovnávanie terénu a príprava stavebných pozemkov. S hydraulickou svahovacou lyžicou 120cm dosiahneme ideálny výsledok.",
-            "icon": "terrain",
-            "image": "images/service_terrain.png"
+            "title": "Murárske práce",
+            "description": "Murovanie z Ytongu, Porfixu a klasických tehál. Novostavby, prístavby, prestavby.",
+            "icon": "brick-wall"
           },
           {
             "id": "svc_4",
-            "title": "Búracie práce",
-            "description": "Demolácie menších stavieb, búranie betónových plôch a odstraňovanie starých konštrukcií s odborným prístupom.",
-            "icon": "demolition",
-            "image": "images/service_demolition.png"
+            "title": "Zámková dlažba a obrubníky",
+            "description": "Pokládka zámkovej dlažby, osadenie obrubníkov a žľabov. Chodníky, príjazdy, terasy.",
+            "icon": "grid-3x3"
           },
           {
             "id": "svc_5",
-            "title": "Odvoz zeminy",
-            "description": "Zabezpečíme odvoz vykopanej zeminy a stavebného odpadu. Komplexné riešenie od výkopu po čistý pozemok.",
-            "icon": "truck",
-            "image": "images/service_transport.png"
+            "title": "Oporné múry",
+            "description": "Záhradné oporné múry — kamenné, betónové, stĺpikové. Funkčné aj estetické riešenia pre váš pozemok.",
+            "icon": "mountain"
           },
           {
             "id": "svc_6",
-            "title": "Špeciálne práce",
-            "description": "Výkopy v stiesnených priestoroch vďaka nulovému presahu rýpadla. Mimoosové kopanie pre prácu blízko budov a plotov.",
-            "icon": "precision",
-            "image": "images/service_special.png"
+            "title": "Fermacell a OSB podlahy",
+            "description": "Montáž suchých podlahových systémov Fermacell a OSB na trámové stropy. Rýchle, čisté a spoľahlivé.",
+            "icon": "square-stack"
+          },
+          {
+            "id": "svc_7",
+            "title": "Maľovanie a stierkovanie",
+            "description": "Interiérové maľby, dekoratívne stierky a tapetovanie. Precízna povrchová úprava pre dokonalý výsledok.",
+            "icon": "paintbrush"
+          },
+          {
+            "id": "svc_8",
+            "title": "Rekonštrukcie domov a bytov",
+            "description": "Kompletné rekonštrukcie od projektu po odovzdanie. Kúpeľne, kuchyne, celé byty a rodinné domy.",
+            "icon": "hammer",
+            "featured": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "gallery",
+      "id": "portfolio_1",
+      "label": "Galéria",
+      "order": 6,
+      "fields": {
+        "label": "Galéria",
+        "headline": "Ukážky našej práce",
+        "subheadline": "Fotografie z našich realizácií hovoria za nás.",
+        "items": [
+          {
+            "id": "proj_1",
+            "title": "Kompletná rekonštrukcia bytu",
+            "category": "Rekonštrukcia",
+            "image": "https://www.bazos.sk/img/3/305/189257305.jpg?t=1772370819"
+          },
+          {
+            "id": "proj_2",
+            "title": "Sadrokartónové podkrovie",
+            "category": "Sadrokartón",
+            "image": "https://www.bazos.sk/img/5/305/189257305.jpg?t=1772370819"
+          },
+          {
+            "id": "proj_3",
+            "title": "Panelový plot 3D s bránou",
+            "category": "Ploty",
+            "image": "https://www.bazos.sk/img/6/305/189257305.jpg?t=1772370819"
+          },
+          {
+            "id": "proj_4",
+            "title": "Zámková dlažba — príjazdová cesta",
+            "category": "Dlažba",
+            "image": "https://www.bazos.sk/img/7/305/189257305.jpg?t=1772370819"
+          },
+          {
+            "id": "proj_5",
+            "title": "Oporný múr v záhrade",
+            "category": "Oporné múry",
+            "image": "https://www.bazos.sk/img/12/305/189257305.jpg?t=1772370819"
+          },
+          {
+            "id": "proj_6",
+            "title": "Rekonštrukcia kúpeľne",
+            "category": "Rekonštrukcia",
+            "image": "https://www.bazos.sk/img/13/305/189257305.jpg?t=1772370819"
           }
         ]
       }
@@ -110,170 +188,97 @@
     {
       "type": "features",
       "id": "features_1",
-      "label": "Naše stroje",
-      "order": 5,
-      "fields": {
-        "headline": "Naše stroje",
-        "subtitle": "Moderná technika pre kvalitné výsledky",
-        "machine_name": "Kubota U27-4",
-        "machine_description": "Pásové rýpadlo s hmotnosťou 2700 kg, nulovým presahom a možnosťou mimoosového kopania. Ideálne pre prácu v stiesnených priestoroch a blízko existujúcich stavieb.",
-        "machine_image": "images/machine_kubota.png",
-        "specs": [
-          { "id": "spec_1", "label": "Prevádzková hmotnosť", "value": "2 590 kg" },
-          { "id": "spec_2", "label": "Šírka lyžice so zubami", "value": "500 mm" },
-          { "id": "spec_3", "label": "Objem lyžice", "value": "66 l" },
-          { "id": "spec_4", "label": "Zarovnávacia radlica", "value": "1500 x 300 mm" },
-          { "id": "spec_5", "label": "Dĺžka stroja", "value": "4 190 mm" },
-          { "id": "spec_6", "label": "Výška stroja", "value": "2 430 mm" },
-          { "id": "spec_7", "label": "Šírka stroja", "value": "1 560 mm" }
-        ],
-        "accessories": [
-          { "id": "acc_1", "title": "Lopata 30cm", "description": "Pre úzke výkopy a inžinierske siete", "icon": "shovel" },
-          { "id": "acc_2", "title": "Lopata 50cm", "description": "Štandardná šírka pre väčšinu prác", "icon": "shovel" },
-          { "id": "acc_3", "title": "Lopata 60cm", "description": "Pre širšie výkopy a základy", "icon": "shovel" },
-          { "id": "acc_4", "title": "Svahovacia lyžica 120cm", "description": "Hydraulická lyžica pre terénne úpravy", "icon": "level" }
-        ]
-      }
-    },
-    {
-      "type": "gallery",
-      "id": "gallery_1",
-      "label": "Galéria prác",
-      "order": 6,
-      "fields": {
-        "headline": "Galéria našich prác",
-        "subtitle": "Pozrite si ukážky z našich dokončených projektov",
-        "items": [
-          { "id": "gal_1", "image": "images/1678444840img-20220919-115230.jpg", "caption": "Zemné práce v teréne" },
-          { "id": "gal_2", "image": "images/1678445720img-20220629-124702.jpg", "caption": "Výkopové práce" },
-          { "id": "gal_3", "image": "images/1678446120img-20220513-140811.jpg", "caption": "Príprava pozemku" },
-          { "id": "gal_4", "image": "images/1689506068img-20230412-104148.jpg", "caption": "Výkopy pre základy" },
-          { "id": "gal_5", "image": "images/1689506219img-20230411-134333.jpg", "caption": "Práca s rýpadlom" },
-          { "id": "gal_6", "image": "images/1689506381img-20230517-220801.jpg", "caption": "Terénne úpravy" },
-          { "id": "gal_7", "image": "images/1689506602img-20230517-220851.jpg", "caption": "Inžinierske siete" },
-          { "id": "gal_8", "image": "images/1689506691img-20230412-113332.jpg", "caption": "Dokončený projekt" }
-        ]
-      }
-    },
-    {
-      "type": "stats",
-      "id": "stats_1",
-      "label": "Štatistiky",
+      "label": "Prečo my",
       "order": 7,
       "fields": {
-        "headline": "Naše čísla hovoria za nás",
+        "label": "Naše výhody",
+        "headline": "Prečo si vybrať nás?",
         "items": [
-          { "id": "stat_1", "value": "5", "label": "Rokov skúseností", "suffix": "+" },
-          { "id": "stat_2", "value": "200", "label": "Dokončených projektov", "suffix": "+" },
-          { "id": "stat_3", "value": "150", "label": "Spokojných klientov", "suffix": "+" },
-          { "id": "stat_4", "value": "100", "label": "Spokojnosť klientov", "suffix": "%" }
+          {
+            "id": "feat_1",
+            "number": "01",
+            "title": "Bezplatná obhliadka a cenová ponuka",
+            "description": "Prídeme, pozrieme sa na rozsah prác a pripravíme férovú cenovú ponuku. Bez záväzkov.",
+            "icon": "clipboard-check"
+          },
+          {
+            "id": "feat_2",
+            "number": "02",
+            "title": "Overené materiály so zárukou",
+            "description": "Rigips, Knauf, Fermacell, Ytong — používame len značkové materiály s certifikátom kvality.",
+            "icon": "badge-check"
+          },
+          {
+            "id": "feat_3",
+            "number": "03",
+            "title": "Dodržiavame dohodnuté termíny",
+            "description": "Čo sľúbime, to dodržíme. Žiadne nekonečné stavby — pracujeme efektívne a načas.",
+            "icon": "calendar-check"
+          },
+          {
+            "id": "feat_4",
+            "number": "04",
+            "title": "Čistá a poctivá práca",
+            "description": "Po nás neostane neporiadok. Odovzdávame hotovú prácu, nie rozrobenú stavbu.",
+            "icon": "sparkles"
+          }
         ]
       }
     },
     {
       "type": "cta_banner",
       "id": "cta_1",
-      "label": "Výzva k akcii",
+      "label": "CTA Banner",
       "order": 8,
       "fields": {
-        "headline": "Nové stroje, lepšie výsledky",
-        "text": "Investovali sme do novej modernej techniky, aby sme vám mohli poskytnúť ešte kvalitnejšie a rýchlejšie služby. Kontaktujte nás a presvedčte sa sami o kvalite našej práce.",
+        "headline": "Plánujete stavbu alebo rekonštrukciu?",
+        "text": "Ozvite sa nám a my vám pripravíme nezáväznú cenovú ponuku. Poradíme, navrhneme a zrealizujeme.",
         "cta_text": "Zavolajte nám",
-        "cta_url": "tel:+421918232437",
-        "background_image": "images/hero_bg.png"
-      }
-    },
-    {
-      "type": "testimonials",
-      "id": "testimonials_1",
-      "label": "Recenzie",
-      "order": 9,
-      "fields": {
-        "headline": "Čo hovoria naši klienti",
-        "subtitle": "Dôvera našich zákazníkov je pre nás najdôležitejšia",
-        "items": [
-          {
-            "id": "rev_1",
-            "name": "Jozef",
-            "text": "Kvalitne odvedená práca, profesionálny prístup bagristu. Bager flexibilný, dostane sa skoro všade. Spokojnosť. Cena adekvátna k dobre odvedenej práci.",
-            "role": "Renčišov",
-            "rating": 5
-          },
-          {
-            "id": "rev_2",
-            "name": "Martin",
-            "text": "Rýchla a spoľahlivá práca. Damián bol veľmi ochotný a profesionálny. Výkopy pre náš rodinný dom boli hotové v rekordnom čase. Určite odporúčam!",
-            "role": "Sabinov",
-            "rating": 5
-          },
-          {
-            "id": "rev_3",
-            "name": "Peter",
-            "text": "Veľmi dobrá spolupráca. Presný termín, kvalitná práca a férová cena. Stroj sa dostal aj do miest, kde som to nečakal. Ďakujem za pomoc s kanalizáciou.",
-            "role": "Prešov",
-            "rating": 5
-          }
-        ]
-      }
-    },
-    {
-      "type": "service_area",
-      "id": "service_area_1",
-      "label": "Pokrytie oblasti",
-      "order": 10,
-      "fields": {
-        "headline": "Kde pôsobíme",
-        "subtitle": "Pokrývame široké okolie okresov Prešov a Sabinov",
-        "text": "Hlavne pôsobíme v okresoch Prešov a Sabinov, ale radi prídeme aj do okolitých oblastí. Kontaktujte nás pre individuálnu cenovú ponuku.",
-        "map_embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d334198.55749000737!2d20.65948499503234!3d49.12603617727383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473e611a25f9a809%3A0x300f7d1c6979010!2sSabinov!5e0!3m2!1ssk!2ssk!4v1649402559392!5m2!1ssk!2ssk",
-        "areas": [
-          { "id": "area_1", "name": "Sabinov" },
-          { "id": "area_2", "name": "Prešov" },
-          { "id": "area_3", "name": "Lipany" },
-          { "id": "area_4", "name": "Široké" },
-          { "id": "area_5", "name": "Jarovnice" },
-          { "id": "area_6", "name": "Renčišov" },
-          { "id": "area_7", "name": "Pečovská Nová Ves" },
-          { "id": "area_8", "name": "Ľutina" }
-        ]
+        "cta_url": "tel:+421904367347",
+        "background_image": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=80"
       }
     },
     {
       "type": "contact",
       "id": "contact_1",
       "label": "Kontakt",
-      "order": 11,
+      "order": 9,
       "fields": {
-        "headline": "Kontaktujte nás",
-        "subtitle": "Máte otázky? Neváhajte sa ozvať.",
-        "owner_name": "Damián Paločko",
-        "owner_role": "Majiteľ",
-        "company": "Damián Paločko",
-        "address": "Renčišov 77, 082 63 Jarovnice",
-        "phone": "0918 232 437",
-        "email": "info@vybagrujemsb.sk",
-        "ico": "54452694",
-        "dic": "1121666403"
+        "label": "Kontakt",
+        "headline": "Ozvite sa nám",
+        "subheadline": "Sme pripravení pomôcť s vaším projektom",
+        "address": "Žilina, Slovensko",
+        "phone": "+421 904 367 347",
+        "email": "idealnestavby@gmail.com",
+        "working_hours": "Pondelok — Piatok: 7:00 — 17:00",
+        "form_name_label": "Vaše meno",
+        "form_name_placeholder": "Ján Novák",
+        "form_phone_label": "Telefón",
+        "form_phone_placeholder": "+421 9XX XXX XXX",
+        "form_email_label": "Email",
+        "form_email_placeholder": "vas@email.sk",
+        "form_message_label": "Opíšte váš projekt",
+        "form_message_placeholder": "Čo potrebujete realizovať, aký je rozsah prác...",
+        "form_submit_text": "Odoslať dopyt"
       }
     },
     {
       "type": "footer",
       "id": "footer_1",
-      "label": "Pätička",
-      "order": 12,
+      "label": "Päta stránky",
+      "order": 10,
       "fields": {
-        "copyright_text": "Vybagrujemsb.sk, 2026. Všetky práva vyhradené.",
+        "description": "Kompletné stavebné práce v Žiline a okolí. Sadrokartón, ploty, murovanie, dlažba, rekonštrukcie. Poctivá práca za férové ceny.",
+        "copyright_text": "2025 Ideálne stavby. Všetky práva vyhradené.",
         "links": [
           { "id": "flink_1", "label": "Domov", "url": "#hero_1" },
           { "id": "flink_2", "label": "Služby", "url": "#services_1" },
-          { "id": "flink_3", "label": "Stroje", "url": "#features_1" },
-          { "id": "flink_4", "label": "Galéria", "url": "#gallery_1" },
-          { "id": "flink_5", "label": "Kontakt", "url": "#contact_1" }
+          { "id": "flink_3", "label": "Galéria", "url": "#portfolio_1" },
+          { "id": "flink_4", "label": "Kontakt", "url": "#contact_1" }
         ],
-        "social": [
-          { "id": "social_1", "platform": "facebook", "url": "https://www.facebook.com/vybagrujemsb.sk" },
-          { "id": "social_2", "platform": "instagram", "url": "https://www.instagram.com/vybagrujemsb.sk/" }
-        ]
+        "contact_phone": "+421 904 367 347",
+        "contact_email": "idealnestavby@gmail.com",
+        "contact_address": "Žilina, Slovensko"
       }
     }
   ]

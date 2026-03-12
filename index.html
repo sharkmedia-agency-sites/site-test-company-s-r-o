@@ -1,54 +1,249 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zemne a vykopove prace - Sabinov a Presov | Vybagrujemsb.sk</title>
-    <meta name="description" content="Profesionalne zemne a vykopove prace v okresoch Presov a Sabinov. Moderne stroje, kvalitna praca, ferna cena. Kontaktujte nas: 0918 232 437.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/favicon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ideálne stavby — kompletné stavebné práce v Žiline. Sadrokartón, ploty, murovanie, zámková dlažba, rekonštrukcie domov a bytov.">
+  <title>Ideálne stavby | Stavebné práce Žilina</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#D4890E',
+            'primary-dark': '#B8750A',
+            'primary-light': '#E9A43A',
+            dark: '#1B1B1F',
+            surface: '#EEEDEA',
+            'surface-dark': '#E5E4E0',
+            cream: '#F7F6F3',
+          },
+          fontFamily: {
+            heading: ['Archivo', 'sans-serif'],
+            body: ['"DM Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body id="top" data-page="home">
+<body data-page="home" class="bg-cream text-dark font-body antialiased overflow-x-hidden">
 
-    <!-- Navigation -->
-    <nav id="navigation_1" data-section="navigation_1" class="site-nav"></nav>
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="nav_1" data-section="nav_1" class="navbar-corporate fixed top-0 left-0 right-0 z-50 py-4">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <a href="#hero_1" class="group nav-logo-text" data-section="nav_1">
+        <span class="text-xl font-heading font-black text-white leading-none" data-field="logo_text"></span>
+      </a>
 
-    <!-- Hero -->
-    <section id="hero_1" data-section="hero_1" class="hero-section"></section>
+      <div class="nav-links-desktop hidden lg:flex items-center gap-8" data-section="nav_1"></div>
 
-    <!-- About -->
-    <section id="about_1" data-section="about_1" class="about-section"></section>
+      <a href="#contact_1" class="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-white rounded-lg font-semibold text-sm hover:bg-primary-dark transition-colors duration-300" data-section="nav_1" data-field="cta_text"></a>
 
-    <!-- Services -->
-    <section id="services_1" data-section="services_1" class="services-section"></section>
+      <div class="hamburger lg:hidden">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Machines / Features -->
-    <section id="features_1" data-section="features_1" class="features-section"></section>
+  <div class="mobile-nav-overlay"></div>
 
-    <!-- Gallery -->
-    <section id="gallery_1" data-section="gallery_1" class="gallery-section"></section>
+  <!-- ===== HERO — Large Image + Overlay Text ===== -->
+  <section id="hero_1" data-section="hero_1" class="hero-section relative min-h-[90vh] flex items-end pb-20 pt-32">
+    <img src="" alt="Stavebné práce" class="hero-bg" data-section="hero_1" data-field="background_image">
+    <div class="hero-overlay"></div>
+    <div class="hero-content max-w-7xl mx-auto px-6 w-full relative z-10">
+      <div class="max-w-3xl fade-up">
+        <h1 class="font-heading text-4xl sm:text-5xl lg:text-7xl text-white font-black leading-[1.05] mb-6 tracking-tight" data-section="hero_1" data-field="headline"></h1>
+        <p class="text-white/70 text-lg lg:text-xl leading-relaxed mb-10 max-w-2xl" data-section="hero_1" data-field="subheadline"></p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white rounded-lg font-bold text-base hover:bg-primary-dark transition-all duration-300 hover:-translate-y-0.5 shadow-sm shadow-primary/15" data-section="hero_1" data-field="cta_text">
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+          <a href="#" class="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/30 text-white rounded-lg font-semibold text-base hover:border-white/60 transition-all duration-300 hover:-translate-y-0.5" data-section="hero_1" data-field="cta_secondary_text"></a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Stats -->
-    <section id="stats_1" data-section="stats_1" class="stats-section"></section>
+  <!-- ===== ABOUT — Text + Checklist + Image ===== -->
+  <section id="about_1" data-section="about_1" class="py-24 lg:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="fade-up">
+          <span class="text-xs font-bold uppercase tracking-[3px] text-primary mb-4 block" data-section="about_1" data-field="label"></span>
+          <h2 class="font-heading text-3xl lg:text-5xl text-dark font-extrabold mb-6 leading-tight" data-section="about_1" data-field="headline"></h2>
+          <p class="text-gray-500 leading-relaxed mb-4 text-lg" data-section="about_1" data-field="text"></p>
+          <p class="text-gray-400 leading-relaxed mb-8" data-section="about_1" data-field="text_2"></p>
+          <div class="about-features-list space-y-3 stagger-parent"></div>
+        </div>
+        <div class="slide-right">
+          <div class="rounded-2xl overflow-hidden shadow-2xl shadow-dark/10">
+            <img src="" alt="O nás" class="w-full h-[500px] object-cover" data-section="about_1" data-field="image" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- CTA Banner -->
-    <section id="cta_1" data-section="cta_1" class="cta-section"></section>
+  <!-- ===== SERVICES — Bento Card Grid ===== -->
+  <section id="services_1" data-section="services_1" class="py-24 lg:py-32 bg-surface">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-2xl mb-16 fade-up">
+        <span class="text-xs font-bold uppercase tracking-[3px] text-primary mb-4 block" data-section="services_1" data-field="label"></span>
+        <h2 class="font-heading text-3xl lg:text-5xl text-dark font-extrabold mb-4" data-section="services_1" data-field="headline"></h2>
+        <p class="text-gray-500 text-lg" data-section="services_1" data-field="subheadline"></p>
+      </div>
+      <div class="services-bento-grid stagger-parent"></div>
+    </div>
+  </section>
 
-    <!-- Testimonials -->
-    <section id="testimonials_1" data-section="testimonials_1" class="testimonials-section"></section>
+  <!-- ===== GALLERY — Collage Grid ===== -->
+  <section id="portfolio_1" data-section="portfolio_1" class="py-24 lg:py-32 bg-cream">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16 fade-up">
+        <span class="text-xs font-bold uppercase tracking-[3px] text-primary mb-4 block" data-section="portfolio_1" data-field="label"></span>
+        <h2 class="font-heading text-3xl lg:text-5xl text-dark font-extrabold mb-4" data-section="portfolio_1" data-field="headline"></h2>
+        <p class="text-gray-500 text-lg" data-section="portfolio_1" data-field="subheadline"></p>
+      </div>
+      <div class="gallery-grid stagger-parent"></div>
+    </div>
+  </section>
 
-    <!-- Service Area -->
-    <section id="service_area_1" data-section="service_area_1" class="service-area-section"></section>
+  <!-- ===== FEATURES — Numbered Steps ===== -->
+  <section id="features_1" data-section="features_1" class="py-24 lg:py-32 bg-dark">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16 fade-up">
+        <span class="text-xs font-bold uppercase tracking-[3px] text-primary mb-4 block" data-section="features_1" data-field="label"></span>
+        <h2 class="font-heading text-3xl lg:text-5xl text-white font-extrabold" data-section="features_1" data-field="headline"></h2>
+      </div>
+      <div class="features-numbered grid sm:grid-cols-2 gap-6 stagger-parent"></div>
+    </div>
+  </section>
 
-    <!-- Contact -->
-    <section id="contact_1" data-section="contact_1" class="contact-section"></section>
+  <!-- ===== CTA BANNER ===== -->
+  <section id="cta_1" data-section="cta_1" class="cta-section py-28 lg:py-36">
+    <img src="" alt="" class="cta-bg" loading="lazy">
+    <div class="cta-content max-w-3xl mx-auto px-6 text-center fade-up">
+      <h2 class="font-heading text-3xl lg:text-5xl text-white font-extrabold mb-6" data-section="cta_1" data-field="headline"></h2>
+      <p class="text-white/60 text-lg mb-10 max-w-xl mx-auto" data-section="cta_1" data-field="text"></p>
+      <a href="#" class="inline-flex items-center gap-3 px-8 py-4 bg-primary text-white rounded-lg font-bold text-lg hover:bg-primary-dark transition-all duration-300 hover:-translate-y-0.5 shadow-sm shadow-primary/15" data-section="cta_1" data-field="cta_text">
+        <i data-lucide="phone" class="w-5 h-5"></i>
+      </a>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer id="footer_1" data-section="footer_1" class="site-footer"></footer>
+  <!-- ===== CONTACT — Cards + Centered Form ===== -->
+  <section id="contact_1" data-section="contact_1" class="py-24 lg:py-32 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-12 fade-up">
+        <span class="text-xs font-bold uppercase tracking-[3px] text-primary mb-4 block" data-section="contact_1" data-field="label"></span>
+        <h2 class="font-heading text-3xl lg:text-5xl text-dark font-extrabold mb-3" data-section="contact_1" data-field="headline"></h2>
+        <p class="text-gray-500" data-section="contact_1" data-field="subheadline"></p>
+      </div>
 
-    <script src="script.js"></script>
+      <!-- Contact Info Cards -->
+      <div class="grid sm:grid-cols-4 gap-4 mb-12 stagger-parent">
+        <div class="contact-info-card stagger-item">
+          <i data-lucide="map-pin" class="w-5 h-5 text-primary mb-3"></i>
+          <div class="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-1">Adresa</div>
+          <div class="text-dark font-medium text-sm" data-section="contact_1" data-field="address"></div>
+        </div>
+        <div class="contact-info-card stagger-item">
+          <i data-lucide="phone" class="w-5 h-5 text-primary mb-3"></i>
+          <div class="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-1">Telefón</div>
+          <div class="text-dark font-medium text-sm" data-section="contact_1" data-field="phone"></div>
+        </div>
+        <div class="contact-info-card stagger-item">
+          <i data-lucide="mail" class="w-5 h-5 text-primary mb-3"></i>
+          <div class="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-1">Email</div>
+          <div class="text-dark font-medium text-sm" data-section="contact_1" data-field="email"></div>
+        </div>
+        <div class="contact-info-card stagger-item">
+          <i data-lucide="clock" class="w-5 h-5 text-primary mb-3"></i>
+          <div class="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-1">Pracovná doba</div>
+          <div class="text-dark font-medium text-sm" data-section="contact_1" data-field="working_hours"></div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrap scale-in">
+        <form class="contact-form-el space-y-5">
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label for="name">Vaše meno</label>
+              <input type="text" id="name" name="name" placeholder="" required>
+            </div>
+            <div>
+              <label for="phone-input">Telefón</label>
+              <input type="tel" id="phone-input" name="phone" placeholder="">
+            </div>
+          </div>
+          <div>
+            <label for="email-input">Email</label>
+            <input type="email" id="email-input" name="email" placeholder="" required>
+          </div>
+          <div>
+            <label for="message">Opíšte váš projekt</label>
+            <textarea id="message" name="message" placeholder="" required></textarea>
+          </div>
+          <button type="submit" class="w-full inline-flex items-center justify-center gap-2 px-8 py-4 bg-dark text-white rounded-lg font-bold text-base hover:bg-dark/85 transition-all duration-300 hover:-translate-y-0.5" data-section="contact_1" data-field="form_submit_text">
+            <i data-lucide="send" class="w-4 h-4"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer_1" data-section="footer_1" class="bg-dark">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+      <div class="grid md:grid-cols-3 gap-12 mb-12">
+        <div>
+          <a href="#hero_1" class="block mb-5">
+            <span class="text-xl font-heading font-black text-white">Ideálne stavby</span>
+          </a>
+          <p class="text-white/35 text-sm leading-relaxed max-w-xs" data-section="footer_1" data-field="description"></p>
+        </div>
+        <div>
+          <div class="text-sm font-bold text-white/60 mb-4 uppercase tracking-wider">Navigácia</div>
+          <div class="footer-nav-links flex flex-col gap-3" data-section="footer_1"></div>
+        </div>
+        <div>
+          <div class="text-sm font-bold text-white/60 mb-4 uppercase tracking-wider">Kontakt</div>
+          <div class="flex flex-col gap-3">
+            <span class="text-white/35 text-sm" data-section="footer_1" data-field="contact_phone"></span>
+            <span class="text-white/35 text-sm" data-section="footer_1" data-field="contact_email"></span>
+            <span class="text-white/35 text-sm" data-section="footer_1" data-field="contact_address"></span>
+          </div>
+        </div>
+      </div>
+      <div class="h-px bg-white/10 mb-8"></div>
+      <p class="text-center text-white/25 text-xs" data-section="footer_1" data-field="copyright_text"></p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top-btn" aria-label="Scroll to top">
+    <i data-lucide="chevron-up" class="w-5 h-5"></i>
+  </button>
+
+  <script src="script.js"></script>
 </body>
 </html>
